@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'ImageViewer.swift'
-  s.version =  ENV['LIB_VERSION'] || '3.0'
+  s.version =  ENV['LIB_VERSION'] || '3.1'
   s.summary = 'An easy to use Image Viewer that is inspired by Facebook'
   s.homepage = 'https://github.com/michaelhenry/ImageViewer.swift'
   s.author = 'Michael Henry Pantaleon', 'me@iamkel.net'
