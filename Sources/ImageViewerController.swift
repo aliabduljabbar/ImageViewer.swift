@@ -278,6 +278,7 @@ extension ImageViewerController {
         dummyImageView.contentMode = .scaleAspectFill
         dummyImageView.alpha = 1.0
         dummyImageView.image = imageView.image
+		dummyImageView.layer.cornerRadius = _sourceView.layer.cornerRadius
         view.addSubview(dummyImageView)
         view.sendSubviewToBack(dummyImageView)
         
@@ -339,6 +340,7 @@ extension ImageViewerController {
         UIView.animate(withDuration: 0.237, animations: {
             dummyImageView.frame = exitFrame
             dummyImageView.clipsToBounds = true
+			dummyImageView.layer.cornerRadius = self.sourceView?.layer.cornerRadius ?? 0.0
             self.backgroundView?.alpha = 0.0
             self.navBar?.alpha = 0.0
         }) { _ in
